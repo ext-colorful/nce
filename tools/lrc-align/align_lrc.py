@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 
 
-TIME_TAG = re.compile(r"\[(\d+):(\d{2})\.(\d{1,3})\]")
+TIME_TAG = re.compile(r"\[(?:(\d+):)?(\d{1,3})\.(\d{1,3})\]")
 ATTRIBUTION_TAG = re.compile(r"^\s*\[(?:ar|by):", re.IGNORECASE)
 TEXT_TOKEN = re.compile(r"[A-Za-z]+(?:'[A-Za-z]+)*|\d+")
 RMS_FRAME_SECONDS = 0.01

@@ -14,6 +14,6 @@ python3 tools/lrc-align/align_lrc.py --batch-root uk --write
 python3 tools/lrc-align/align_lrc.py --batch-root uk --start-at 'NCE3/41.Illusions of Pastoral Peace.lrc' --write
 ```
 
-Batch mode prints periodic heartbeats while a longer audio file is being processed and continues after per-file errors, reporting them in the final summary.
+Batch mode prints periodic heartbeats while a longer audio file is being processed and continues after per-file errors, reporting them in the final summary. It also normalizes legacy time tags with omitted minutes or extra leading zeros when writing aligned captions.
 
 The first run downloads the pretrained English acoustic model. The script expands numeric text (for example, `15`) to spoken words before alignment. The preview lists the three weakest first-word alignment scores for relative review; these scores are not calibrated probabilities and do not shift timestamps. Listen to low-scoring lines before using `--write`; forced alignment depends on the supplied transcript matching the recording.
