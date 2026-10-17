@@ -1,0 +1,5 @@
+av>=14.0.0
+num2words>=0.5.14
+numpy>=2.0.0
+torch>=2.0.0
+torchaudio>=2.0.0
